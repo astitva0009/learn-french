@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f8f3ff, #e6f8ff);
+  color: #1f2a44;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1.2rem;
+  background: #3a4fb4;
+  color: #fff;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 5px 16px rgba(58, 79, 180, 0.12);
+}
+
+label,
+select,
+button {
+  font-size: 1rem;
+}
+
+select,
+button {
+  border: 1px solid #cad4ff;
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+button {
+  cursor: pointer;
+  background: #ffcc4d;
+  color: #1f2a44;
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.status-row,
+.action-row {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.control-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+#levelBadge,
+#scoreBadge,
+#visitBadge {
+  background: #eef1ff;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-weight: 700;
+}
+
+.lesson-content {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f8faff;
+  border: 1px solid #d9e3ff;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+}
+
+.question-box {
+  min-height: 190px;
+  background: #f8faff;
+  border-radius: 10px;
+  border: 1px solid #dbe5ff;
+  padding: 0.8rem;
+}
+
+.question-title {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+
+.option-btn.correct {
+  background: #9df0ad;
+}
+
+.option-btn.wrong {
+  background: #ffb3b3;
+}
+
+.feedback {
+  min-height: 1.2rem;
+  font-weight: 700;
+}
+
+.hint {
+  margin-top: 0;
+  color: #4d5f99;
+}
+
+.level-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(44px, 1fr));
+  gap: 0.5rem;
+}
+
+.level-chip {
+  text-align: center;
+  padding: 0.45rem 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #d4dcff;
+  background: #f4f7ff;
+  font-weight: 700;
+}
+
+.level-chip.done {
+  background: #c6ffcf;
+}
+
+.level-chip.current {
+  border-color: #3a4fb4;
+}
+
+.promo-ad {
+  background: #fff8e6;
+  border: 1px solid #ffe0a3;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.promo-ad h3 {
+  margin: 0 0 0.4rem;
+}
+
+.promo-ad p {
+  margin: 0 0 0.65rem;
+}
+
+.promo-ad .ad-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background: #ffcc4d;
+  font-weight: 700;
+}

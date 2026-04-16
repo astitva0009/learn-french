@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Fun Quest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>French Fun Quest</h1>
+      <p>Learn French words first, then clear 10 game levels!</p>
+    </header>
+
+    <main class="layout">
+      <section class="card lesson-card">
+        <h2>Step 1: Learn by Topic</h2>
+        <label for="topicSelect">Choose Topic</label>
+        <select id="topicSelect" aria-label="Choose topic"></select>
+        <div id="lessonContent" class="lesson-content"></div>
+      </section>
+
+      <section class="card game-card">
+        <h2>Step 2: Play 10 Levels</h2>
+        <div class="control-row">
+          <label for="difficultySelect">Difficulty</label>
+          <select id="difficultySelect" aria-label="Choose difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="status-row">
+          <span id="levelBadge">Level 1</span>
+          <span id="scoreBadge">Score: 0</span>
+          <span id="visitBadge">Visits: --</span>
+        </div>
+        <p id="levelHint" class="hint"></p>
+
+        <div id="questionBox" class="question-box">
+          <p class="question-title" id="questionTitle">Press Start to begin.</p>
+          <div id="options" class="options-grid"></div>
+        </div>
+
+        <div class="action-row">
+          <button id="startBtn">Start Game</button>
+          <button id="nextBtn" disabled>Next Question</button>
+        </div>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="card level-card">
+        <h2>Level Progress</h2>
+        <div id="levelList" class="level-list"></div>
+      </section>
+
+      <section class="card ad-card">
+        <h2>Kids Corner</h2>
+        <p class="hint">Safe promotions from this website only.</p>
+        <div id="promoAd" class="promo-ad"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
